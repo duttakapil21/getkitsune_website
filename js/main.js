@@ -709,9 +709,82 @@ renderCalendar();
 //     alert(elts[i].innerHTML);
 // }
 
+// Function to validate email format
+function validateEmail(email) {
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  return emailRegex.test(email);
+}
 
+// Function to validate mobile number format
+function validateMobile(mobile) {
+  const mobileRegex = /^\d{10}$/;
+  return mobileRegex.test(mobile);
+}
 
+// Function to handle form submission
+function handleSubmit(event) {
+  event.preventDefault(); // Prevent form submission
 
+  // Retrieve form data
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var city = document.getElementById('city').value;
+  var mobile = document.getElementById('mobile').value;
+  var company = document.getElementById('company').value;
 
+  // Validate form data
+  if (!name || !email || !city || !mobile || !company) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  if (!validateEmail(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  if (!validateMobile(mobile)) {
+    alert('Please enter a valid mobile number.');
+    return;
+  }
+
+  // Create data object to send
+  var data = {
+    name: name,
+    email: email,
+    city: city,
+    mobile: mobile,
+    company: company
+  };
+
+  // Make API call
+  fetch('https://5f1a8d65610bde0016fd2b35.mockapi.io/api/v1/users', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+    .then(function(response) {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Error: ' + response.status);
+      }
+    })
+    .then(function(data) {
+      // Handle the response data
+      console.log(data);
+      alert('Someone from Kitsune will be in touch with you shortly.');
+    })
+    .catch(function(error) {
+      // Handle any errors that occurred during the request
+      console.error('Error:', error);
+      alert('An error occurred. Please try again.');
+    });
+}
+
+// Add form submission event listener
+document.getElementById('schedule-a-demo').addEventListener('submit', handleSubmit);
 
 
