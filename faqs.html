@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="Kitsuneframework FAQs help developers understand what type of applications they can build and the skills required to work with them. Find more FAQs on a serverless open-source framework.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Kitsuneframework FAQs (Frequently asked questions)</title>
+	<link rel="canonical" href="https://www.getkitsune.com/kitsuneframework/faqs">
+	<link rel="stylesheet" href="css/all.min.css" k-partial>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/owl.carousel.1623660495083.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/webform.css">
+	<link rel="icon" type="image/png" href="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/favicon.png">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88828396-4"></script>
+	<script>
+	function gtag() {
+		dataLayer.push(arguments)
+	}
+	window.dataLayer = window.dataLayer || [];
+	gtag("js", new Date);
+	gtag("config", "UA-88828396-4")
+	</script>
+	<script>
+	(function(n, t, i, r, u) {
+		n[r] = n[r] || [];
+		n[r].push({
+			"gtm.start": (new Date).getTime(),
+			event: "gtm.js"
+		});
+		var e = t.getElementsByTagName(i)[0],
+			f = t.createElement(i),
+			o = r != "dataLayer" ? "&l=" + r : "";
+		f.async = !0;
+		f.src = "https://www.googletagmanager.com/gtm.js?id=" + u + o;
+		e.parentNode.insertBefore(f, e)
+	})(window, document, "script", "dataLayer", "GTM-MV2WGNQ")
+	</script>
+</head>
+
+<body class="home">
+	<header class="header" k-partial>
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<a class="navbar-brand d-xl-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+<div class="d-flex justify-content-start align-items-center">
+					<!-- <a class="font-14 color-spaceblue text-uppercase p-0 mr-2 d-lg-none" href="login.html">login</a> -->					<button class="navbar-toggler" type="button"><span></span> <span></span> <span></span></button>
+				</div>
+				<div class="nav-1 navbar-collapse form-inline" id="navbarSupportedContent">
+					<a class="navbar-brand d-xl-block d-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+					<ul class="navbar-nav col-xl-6 ml-auto d-flex justify-content-start align-items-center">
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle first-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#181F39" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>kit-proxy</h5></a></li>
+								<!-- <li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview_1.html"><h5>kitsune framework</h5></a></li> -->
+							</ul>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li> -->
+												<!-- <li class="nav-item"><a class="nav-link" href="https://blog.getkitsune.com">blog</a></li> -->
+
+						<li class="nav-item"><a class="nav-link" href="company.html">company</a></li>
+					</ul>
+					<ul class="navbar-nav col-xl-4 d-lg-flex justify-content-end align-items-center">
+						<li class="nav-item"><a class="nav-link" href="scheduleameet.html">Schedule a meet</a></li>
+						<!-- <li class="nav-item"><a class="nav-link" href="https://dashboard.kitsune.tools/" target="_blank">login</a></li> -->
+						<li class="nav-item"><a href="https://proxy-dashboard.getkitsune.com/login" class="orange_cta d-flex justify-content-center align-items-center">login</a></li>
+					</ul>
+					<div class="position-relative w-100 d-none align-items-center" id="kit-proxy-menu">
+						<ul class="mt-md-4 categories col-lg-4 navbar-nav d-flex justify-content-between">
+							<li class="nav-item d-flex justify-content-center align-items-center">
+								<h4 class="font-15 font-semibold">kit-proxy</h4></li>
+							<li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+							<li class="nav-item"><a class="nav-link" href="casestudies_1.html">Case Studies</a></li>
+							<li class="nav-item"><a class="nav-link" href="faqs_1.html">FAQs</a></li>
+						</ul>
+					</div>
+					<!-- <div class="position-relative w-100 d-none align-items-center" id="proxy-framework-menu">
+						<ul class="mt-md-4 categories col-lg-12 navbar-nav d-flex justify-content-start">
+							<li class="nav-item d-flex justify-content-center align-items-center">
+								<h4 class="font-15 font-semibold">kitsune Framework</h4></li>
+							<li class="nav-item"><a class="nav-link" href="overview_1.html">Overview</a></li>
+							<li class="nav-item"><a class="nav-link" href="developers.html">Developers</a></li>
+							<li class="nav-item"><a class="nav-link" href="casestudies.html">Case Studies</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation.html">Documentation</a></li>
+							<li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+		</nav>
+		<div class="navbar mob-nav d-xl-none d-none" id="kit-proxy-mobile-menu">
+			<div class="container py-0 pr-0">
+				<h4 class="font-15 font-semibold">kit-proxy</h4>
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown d-block"><a class="nav-link dropdown-toggle font-14 text-capitalize d-flex justify-content-between align-items-center" href="faqs_1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#F06428" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="casestudies_1.html"><h5>Case studies</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>Overview</h5></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar mob-nav d-xl-none d-none" id="proxy-framework-mobile-menu">
+			<!-- <div class="container py-0 pr-0">
+				<h4 class="font-15 font-semibold">kitsune framework</h4>
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown d-block"><a class="nav-link dropdown-toggle font-14 text-capitalize d-flex justify-content-between align-items-center" href="overview_1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overview <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#F06428" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="casestudies.html"><h5>Case studies</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="developers.html"><h5>Developers</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="documentation.html"><h5>Documentation</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="faqs.html"><h5>FAQs</h5></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div> -->
+		</div>
+		<nav class="navbar navbar-expand-xl" id="main_nav">
+			<div class="container">
+				<a class="navbar-brand d-xl-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+				<button class="navbar-toggler"><span></span> <span></span> <span></span></button>
+				<div class="w-100 form-inline px-3 pt-5" id="navbarSupportedContent">
+					<a class="navbar-brand d-xl-block d-none" href="index_1.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+					<ul class="navbar-nav col-xl-6 ml-auto d-flex justify-content-start align-items-start">
+						<li class="nav-item dropdown d-flex flex-column align-items-start"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#181F39" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>kit-proxy</h5></a></li>
+								<!-- <li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview_1.html"><h5>kitsune framework</h5></a></li> -->
+							</ul>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li> -->
+												<!-- <li class="nav-item"><a class="nav-link" href="https://blog.getkitsune.com">blog</a></li> -->
+
+						<li class="nav-item"><a class="nav-link" href="company.html">company</a></li>
+					</ul>
+					<ul class="navbar-nav col-xl-4 d-lg-flex justify-content-end align-items-start">
+						<li class="nav-item"><a class="nav-link" href="scheduleameet.html">Schedule a meet</a></li>
+						<!-- <li class="nav-item login"><a class="nav-link" href="https://dashboard.kitsune.tools/" target="_blank">login</a></li> -->
+						<li class="nav-item sign-up"><a href="https://proxy-dashboard.getkitsune.com/login" class="orange_cta d-flex justify-content-center align-items-center">login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="bg-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 mx-auto d-flex flex-column justify-content-center align-items-start">
+						<h1 class="font-30">Kitsuneframework FAQs (Frequently asked questions)</h1></div>
+				</div>
+			</div>
+		</section>
+		<section class="faq-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<ul class="nav flex-column nav-pills form-tabs sticky-top d-lg-block d-none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<li class="nav-item tab-selector"><a class="nav-link active" id="v-pills-framework-tab" data-toggle="pill" href="#v-pills-framework" role="tab" aria-controls="v-pills-framework" aria-selected="true">Framework</a></li>
+							<li class="nav-item tab-selector"><a class="nav-link" id="v-pills-oqueries-tab" data-toggle="pill" href="#v-pills-oqueries" role="tab" aria-controls="v-pills-oqueries" aria-selected="false">Other Queries</a></li>
+						</ul>
+						<div class="position-relative select-tab-mob mb-4 d-lg-none d-block">
+							<select class="form-control" id="tab_selector">
+								<option value="0" class="nav-link">Framework</option>
+								<option value="1" class="nav-link">Other Queries</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="tab-content" id="v-pills-tabContent">
+							<div class="tab-pane fade show active" id="v-pills-framework" role="tabpanel" aria-labelledby="v-pills-framework-tab">
+								<div id="accordion">
+									<div class="row acc-row">
+										<div class="col-lg-10 faq-card">
+											<!-- <div class="card">
+												<a class="card-header" id="headingOne">
+													<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">What kind or application can be build using kitsune framework?</h4></div>
+													</button>
+												</a>
+												<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Any dynamic web application can be build using Kitsune framework.</p>
+														<p class="font-14 color-spaceblue">Recommended: non-core application for the enterprise.</p>
+													</div>
+												</div>
+											</div> -->
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingTwo">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Is kitsune a proprietary framework? What are the vendor / platform lock-in challenges?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">kitsune is an Open-Source platform that provides flexibility to developers to build and deploy in infrastructure of choice.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingThree">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Can I update the intermediate cache files to avoid deploy to the server?</h4></div>
+													</button>
+												</a>
+												<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, kit-proxy secondary cache (storage cache) can be accessed and updated manually.</p>
+														<p class="font-14 color-spaceblue">Temporary change, until next invalidation request is raised / received for the same file.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<!-- <div class="card">
+												<a class="card-header" id="headingFour">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Do I need to learn about cloud to develop and deploy application on Kitsune platform?</h4></div>
+													</button>
+												</a>
+												<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">kitsune framework does automatically create a cloud native (serverless) architecture for you while you deploy any application on Kitsune framework.</p>
+														<p class="font-14 color-spaceblue">Since the output of the kitsune web application is cloud agnostic, hence it can be deployed on any supported cloud(AWS, Azure, AliCloud) without changing application logic.</p>
+													</div>
+												</div>
+											</div> -->
+										</div>
+										<div class="col-lg-10 faq-card">
+											<!-- <div class="card">
+												<a class="card-header" id="headingFive">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Is it possible to build e-commerce application with payment gateway integration on kitsune&#x2019;s framework?</h4></div>
+													</button>
+												</a>
+												<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, using kitsune framework you can build e-commerce application.</p>
+														<p class="font-14 color-spaceblue">You can use kitsune payment gateway component to integrate already enabled payment gateways easily. We thrive to enable our customers with best possible ones and accommodate custom requests too.</p>
+														<p class="font-14 color-spaceblue">You can also track the orders and payment transaction as well on the K-Admin.</p>
+													</div>
+												</div>
+											</div> -->
+										</div>
+										<div class="col-lg-10 faq-card">
+											<!-- <div class="card">
+												<a class="card-header" id="headingSix">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">How does kitsune provides security against hacking for the web application?</h4></div>
+													</button>
+												</a>
+												<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">kitsune framework is built on top of serverless/cloud native framework.</p>
+														<p class="font-14 color-spaceblue">Since the application isn&#x2019;t hosted on any specific server, it never exposes any IP or any port (apart from 80/443) to the external users.</p>
+														<p class="font-14 color-spaceblue">Since the data access is handled server side, and only plain HTML is the output, hence no one can access the business logic and database.</p>
+													</div>
+												</div>
+											</div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-oqueries" role="tabpanel" aria-labelledby="v-pills-oqueries-tab">
+								<div id="accordion-1">
+									<div class="row acc-row">
+										<div class="col-lg-10 faq-card">
+											<!-- <div class="card">
+												<a class="card-header" id="queryOne">
+													<button class="btn btn-link" data-toggle="collapse" data-target="#collapseQuery1" aria-expanded="true" aria-controls="collapseQuery1">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">How can I integrate external API/Services into kitsune web application?</h4></div>
+													</button>
+												</a>
+												<div id="collapseQuery1" class="collapse show" aria-labelledby="queryOne" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Using k-script directive of Kitsune framework, you can integrate external API.</p>
+													</div>
+												</div>
+											</div> -->
+										</div>
+										<div class="col-lg-10 faq-card">
+											<!-- <div class="card">
+												<a class="card-header" id="queryTwo">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseQuery2" aria-expanded="true" aria-controls="collapseQuery2">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">How can I access the Kitsune web application data outside of K-Admin (CMS)?</h4></div>
+													</button>
+												</a>
+												<div id="collapseQuery2" class="collapse" aria-labelledby="queryTwo" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">kitsune framework exposes a generic API to access the CMS data, which can be used to integrate with external applications (i.e CRM, ERP).</p>
+													</div>
+												</div>
+											</div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="trust-kitsune bg-orange">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 d-flex justify-content-center align-items-center text-center">
+						<h3 class="font-42 text-white d-inline-block"><span>Get started with</span> kit-proxy</h3></div>
+					<div class="col-lg-12 d-flex justify-content-center align-items-center pt-5"><a href="scheduleameet.html" class="white_cta color-orange d-flex justify-content-center align-items-center" alt="proxy-start">Accelerate <span class="ml-1">Now</span></a></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer" style="bottom:0;width:100%" k-partial>
+		<div class="container">
+			<div class="row m-0">
+				<div class="col-lg-6 col-md-4 col-12 pb-5 pb-lg-0">
+					<a href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" alt="Kitsune logo"></a>
+					<h5 class="tag-line font-14 mt-3">Accelerate <span>|</span> Build <span>|</span> Consult</h5>
+					<!-- <div class="d-inline-block d-lg-none mx-auto pt-4"><a href="https://ide.kitsune.tools/" class="orange_cta d-flex justify-content-between align-items-center">sign up <span class="ml-1">for free</span></a></div> -->
+					<div class="d-flex mt-5">
+						<a href="https://github.com/GetKitsune" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/stackoverflow.svg" alt="Stackoverflow Icon" title="Stackoverflow"></a>
+						<a href="https://www.facebook.com/GetKitsune/" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/fb.svg" alt="Facebook Icon" title="Facebook"></a>
+						<a href="https://twitter.com/getkitsune" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/twitter.svg" alt="Twitter Icon" title="Twitter"></a>
+						<a href="https://www.linkedin.com/company/kitsune-technologies/" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/linkedin.svg" alt="LinkedIn Icon" title="LinkedIn"></a>
+					</div>
+					<div>
+						<h6 class="font-12 mt-3">&#xA9;<script>var date=new Date;document.write(`${date.getFullYear()} `)</script>NowFloats Technologies Ltd.</h6></div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">kit-proxy</h5>
+						<li><a href="overview.html"><h6>Overview</h6></a></li>
+						<li><a href="casestudies_1.html"><h6>Case Studies</h6></a></li>
+						<li><a href="faqs_1.html"><h6>FAQs</h6></a></li>
+					</ul>
+				</div>
+				<!-- <div class="col-lg-2 col-md-4 col-6">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">kitsune Framework</h5>
+						<li><a href="overview_1.html"><h6>Overview</h6></a></li>
+						<li><a href="developers.html"><h6>Developers</h6></a></li>
+						<li><a href="casestudies.html"><h6>Case Studies</h6></a></li>
+						<li><a href="documentation.html"><h6>Documentation</h6></a></li>
+						<li><a href="faqs.html"><h6>FAQs</h6></a></li>
+					</ul>
+				</div> -->
+				<div class="col-lg-2 col-md-4">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">Company</h5>
+						<li><a href="company.html"><h6>About us</h6></a></li>
+						<li><a href="company.html#connect-with-us"><h6>Work with us</h6></a></li>
+						<li><a href="policy.html"><h6>Privacy Policy</h6></a></li>
+						<li><a href="terms.html"><h6>Usage Terms</h6></a></li>
+						<li><a href="caution-notice.html"><h6>Caution Notice</h6></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/new.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/setup_owl.min.js" charset="utf-8"></script>
+	<script>
+	$(document).ready(function() {
+		$(document.body).prepend('<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV2WGNQ" height="0" width="0" style="display:none;visibility:hidden"><\/iframe><\/noscript>');
+		let n = window.location.pathname.split("/"),
+			t = n[1];
+		switch(t) {
+			case "kitproxy":
+				{
+					$("#kit-proxy-menu").addClass("d-flex").removeClass("d-none");
+					$("#kit-proxy-mobile-menu").removeClass("d-none");
+					let t = n[3];
+					$(`#kit-proxy-menu .nav-item:contains(${t})`).addClass("active")
+				}
+				break;
+			case "kitsuneframework":
+				{
+					$("#proxy-framework-menu").addClass("d-flex").removeClass("d-none");
+					$("#proxy-framework-mobile-menu").removeClass("d-none");
+					let t = n[3];
+					$(`#proxy-framework-menu .nav-item:contains(${t})`).addClass("active")
+				}
+				break;
+			default:
+				$("#proxy-framework-menu").removeClass("d-flex").addClass("d-none");
+				$("#proxy-framework-mobile-menu").addClass("d-none");
+				$("#kit-proxy-menu").removeClass("d-flex").addClass("d-none");
+				$("#kit-proxy-mobile-menu").addClass("d-none")
+		}
+		window.location.pathname.includes("index.html") && window.location.replace("/")
+	})
+	</script><span style="display:none" id="GET-VALUE(THEME-ID)">5f84523f2c596200013ff0dd</span><span style="display:none" id="GET-VALUE(WEBSITE-ID)">5f84523f2c596200013ff0df</span>
+	<a style="display:none" href="index.html" id="GET-URL(HOME)"></a>
+</body>
+
+</html>

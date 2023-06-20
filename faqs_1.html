@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="The collection of Kitproxy Web Accelerator FAQs helps you understand how to implement Kitproxy&#x2019;s functionalities and improve website performance.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Kitproxy Web Accelerator FAQs (Frequently asked questions) - Kitsune</title>
+	<link rel="canonical" href="https://www.getkitsune.com/kitproxy/faqs">
+	<link rel="stylesheet" href="css/all.min.css" k-partial>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/owl.carousel.1623660495083.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/webform.css">
+	<link rel="icon" type="image/png" href="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/favicon.png">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88828396-4"></script>
+	<script>
+	function gtag() {
+		dataLayer.push(arguments)
+	}
+	window.dataLayer = window.dataLayer || [];
+	gtag("js", new Date);
+	gtag("config", "UA-88828396-4")
+	</script>
+	<script>
+	(function(n, t, i, r, u) {
+		n[r] = n[r] || [];
+		n[r].push({
+			"gtm.start": (new Date).getTime(),
+			event: "gtm.js"
+		});
+		var e = t.getElementsByTagName(i)[0],
+			f = t.createElement(i),
+			o = r != "dataLayer" ? "&l=" + r : "";
+		f.async = !0;
+		f.src = "https://www.googletagmanager.com/gtm.js?id=" + u + o;
+		e.parentNode.insertBefore(f, e)
+	})(window, document, "script", "dataLayer", "GTM-MV2WGNQ")
+	</script>
+</head>
+
+<body class="home">
+	<header class="header" k-partial>
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<a class="navbar-brand d-xl-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+<div class="d-flex justify-content-start align-items-center">
+					<!-- <a class="font-14 color-spaceblue text-uppercase p-0 mr-2 d-lg-none" href="login.html">login</a> -->					<button class="navbar-toggler" type="button"><span></span> <span></span> <span></span></button>
+				</div>
+				<div class="nav-1 navbar-collapse form-inline" id="navbarSupportedContent">
+					<a class="navbar-brand d-xl-block d-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+					<ul class="navbar-nav col-xl-6 ml-auto d-flex justify-content-start align-items-center">
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle first-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#181F39" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>kit-proxy</h5></a></li>
+								<!-- <li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview_1.html"><h5>kitsune framework</h5></a></li> -->
+							</ul>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li> -->
+												<!-- <li class="nav-item"><a class="nav-link" href="https://blog.getkitsune.com">blog</a></li> -->
+
+						<li class="nav-item"><a class="nav-link" href="company.html">company</a></li>
+					</ul>
+					<ul class="navbar-nav col-xl-4 d-lg-flex justify-content-end align-items-center">
+						<li class="nav-item"><a class="nav-link" href="scheduleameet.html">Schedule a meet</a></li>
+						<!-- <li class="nav-item"><a class="nav-link" href="https://dashboard.kitsune.tools/" target="_blank">login</a></li> -->
+						<li class="nav-item"><a href="https://proxy-dashboard.getkitsune.com/login" class="orange_cta d-flex justify-content-center align-items-center">login</a></li>
+					</ul>
+					<div class="position-relative w-100 d-none align-items-center" id="kit-proxy-menu">
+						<ul class="mt-md-4 categories col-lg-4 navbar-nav d-flex justify-content-between">
+							<li class="nav-item d-flex justify-content-center align-items-center">
+								<h4 class="font-15 font-semibold">kit-proxy</h4></li>
+							<li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+							<li class="nav-item"><a class="nav-link" href="casestudies_1.html">Case Studies</a></li>
+							<li class="nav-item"><a class="nav-link" href="faqs_1.html">FAQs</a></li>
+						</ul>
+					</div>
+					<!-- <div class="position-relative w-100 d-none align-items-center" id="proxy-framework-menu">
+						<ul class="mt-md-4 categories col-lg-12 navbar-nav d-flex justify-content-start">
+							<li class="nav-item d-flex justify-content-center align-items-center">
+								<h4 class="font-15 font-semibold">kitsune Framework</h4></li>
+							<li class="nav-item"><a class="nav-link" href="overview_1.html">Overview</a></li>
+							<li class="nav-item"><a class="nav-link" href="developers.html">Developers</a></li>
+							<li class="nav-item"><a class="nav-link" href="casestudies.html">Case Studies</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation.html">Documentation</a></li>
+							<li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+		</nav>
+		<div class="navbar mob-nav d-xl-none d-none" id="kit-proxy-mobile-menu">
+			<div class="container py-0 pr-0">
+				<h4 class="font-15 font-semibold">kit-proxy</h4>
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown d-block"><a class="nav-link dropdown-toggle font-14 text-capitalize d-flex justify-content-between align-items-center" href="faqs_1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#F06428" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="casestudies_1.html"><h5>Case studies</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>Overview</h5></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar mob-nav d-xl-none d-none" id="proxy-framework-mobile-menu">
+			<!-- <div class="container py-0 pr-0">
+				<h4 class="font-15 font-semibold">kitsune framework</h4>
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown d-block"><a class="nav-link dropdown-toggle font-14 text-capitalize d-flex justify-content-between align-items-center" href="overview_1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overview <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#F06428" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="casestudies.html"><h5>Case studies</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="developers.html"><h5>Developers</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="documentation.html"><h5>Documentation</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="faqs.html"><h5>FAQs</h5></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div> -->
+		</div>
+		<nav class="navbar navbar-expand-xl" id="main_nav">
+			<div class="container">
+				<a class="navbar-brand d-xl-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+				<button class="navbar-toggler"><span></span> <span></span> <span></span></button>
+				<div class="w-100 form-inline px-3 pt-5" id="navbarSupportedContent">
+					<a class="navbar-brand d-xl-block d-none" href="index_1.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+					<ul class="navbar-nav col-xl-6 ml-auto d-flex justify-content-start align-items-start">
+						<li class="nav-item dropdown d-flex flex-column align-items-start"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#181F39" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>kit-proxy</h5></a></li>
+								<!-- <li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview_1.html"><h5>kitsune framework</h5></a></li> -->
+							</ul>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li> -->
+												<!-- <li class="nav-item"><a class="nav-link" href="https://blog.getkitsune.com">blog</a></li> -->
+
+						<li class="nav-item"><a class="nav-link" href="company.html">company</a></li>
+					</ul>
+					<ul class="navbar-nav col-xl-4 d-lg-flex justify-content-end align-items-start">
+						<li class="nav-item"><a class="nav-link" href="scheduleameet.html">Schedule a meet</a></li>
+						<!-- <li class="nav-item login"><a class="nav-link" href="https://dashboard.kitsune.tools/" target="_blank">login</a></li> -->
+						<li class="nav-item sign-up"><a href="https://proxy-dashboard.getkitsune.com/login" class="orange_cta d-flex justify-content-center align-items-center">login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="bg-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 mx-auto d-flex flex-column justify-content-center align-items-start">
+						<h1 class="font-30">Kitproxy Web Accelerator FAQs (Frequently asked questions)</h1></div>
+				</div>
+			</div>
+		</section>
+		<section class="faq-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<ul class="nav flex-column nav-pills form-tabs sticky-top d-lg-block d-none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<li class="nav-item tab-selector"><a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Sales</a></li>
+							<li class="nav-item tab-selector"><a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Technical</a></li>
+							<li class="nav-item tab-selector"><a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Sales/Technical</a></li>
+						</ul>
+						<div class="position-relative select-tab-mob pb-4 d-lg-none d-block">
+							<select class="form-control" id="tab_selector">
+								<option value="0" class="nav-link">Sales</option>
+								<option value="1" class="nav-link">Technical</option>
+								<option value="2" class="nav-link">Sales/Technical</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<div class="tab-content" id="v-pills-tabContent">
+							<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+								<div id="accordion">
+									<div class="row acc-row">
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingOne">
+													<button id="first" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Can we offer POC to customer?</h4></div>
+													</button>
+												</a>
+												<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, we could provide on a case to case basis.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingTwo">
+													<button id="first" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Do we have an ROI model investment vs savings? What is the duration we commit to attain breakeven for investment made on kit-proxy?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Immediate ROI is accelerated web application.</p>
+														<p class="font-14 color-spaceblue">ROI may defer from customer to customer.</p><a href="#" class="pt-lg-4 pt-3 font-14 color-orange">Please refer case studies for more details.</a></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingThree">
+													<button id="first" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Do we have list of questions and answers which are typically asked in a sales discussion while we pitch this product. If yes, can you forward it to the entire team</h4></div>
+													</button>
+												</a>
+												<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, we can forward it to the entire team.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingFour">
+													<button id="first" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Does customer needs to contact cloud service providers separately?</h4></div>
+													</button>
+												</a>
+												<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">No, kit-proxy is a packaged solution.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingFive">
+													<button id="first" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Is there any requirement for rewriting the existing application?</h4></div>
+													</button>
+												</a>
+												<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">No</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="headingSix">
+													<button id="first" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">There are couple of large enterprise customer accounts (Bosch &amp; Britannia) are part of the target list would like to know on what aspect that has been considered. As both the accounts are already on an end to end cloud model with required security</h4></div>
+													</button>
+												</a>
+												<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">They can use kit-proxy for acceleration and also to drive omni-channel discovery.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="sidecollapse1">
+										<div class="row">
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="headingSeven">
+														<button id="first" class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">What is the scope with Cloud telephony company?</h4></div>
+														</button>
+													</a>
+													<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Not Applicable</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-10 d-flex justify-content-center">
+											<div class="d-inline-block"><a class="readmore orange_cta d-flex justify-content-center align-items-center" data-toggle="collapse" data-target="#sidecollapse1" aria-expanded="false" aria-controls="sidecollapse1">read more</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+								<div id="accordion-1">
+									<div class="row acc-row">
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techSalesOne">
+													<button id="first" class="btn btn-link" data-toggle="collapse" data-target="#collapseTS1" aria-expanded="true" aria-controls="collapseTS1">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Can I update the intermediate cache files to avoid deploy to the server?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTS1" class="collapse show" aria-labelledby="techSalesOne" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, kit-proxy secondary cache (storage cache) can be accessed and updated manually.</p>
+														<p class="pt-lg-4 pt-3 font-14 color-spaceblue">Temporary change, until next invalidation request is raised / received for the same file.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techSalesTwo">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS2" aria-expanded="true" aria-controls="collapseTS2">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Can I use kit-proxy for applications deployed on Azure?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTS2" class="collapse" aria-labelledby="techSalesTwo" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, kit-proxy can be used for any web application, hosted on any cloud/on-premise infrastructure.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techSalesThree">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS3" aria-expanded="true" aria-controls="collapseTS3">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Can kit-proxy restrict the access via IP based whitelisting?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTS3" class="collapse" aria-labelledby="techSalesThree" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, using WAF rules you can configure IP whitelisting.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techSalesFour">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS4" aria-expanded="true" aria-controls="collapseTS4">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Can we deh4loy kit-proxy on our AWS infrastructure?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTS4" class="collapse" aria-labelledby="techSalesFour" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, kit-proxy supports AWS infrastructure.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techSalesFive">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS5" aria-expanded="true" aria-controls="collapseTS5">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">DDoS mitigation bandwidth?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTS5" class="collapse" aria-labelledby="techSalesFive" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Volumetric security as needed.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techSalesSix">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS6" aria-expanded="true" aria-controls="collapseTS6">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Do clients want to integrate higher security components</h4></div>
+													</button>
+												</a>
+												<div id="collapseTS6" class="collapse" aria-labelledby="techSalesSix" data-parent="#accordion-1">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Yes, we could provide on a case to case basis.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="sidecollapse2">
+										<div class="row">
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techSalesSeven">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS7" aria-expanded="true" aria-controls="collapseTS7">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Do we have DDoS protection</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS7" class="collapse" aria-labelledby="techSalesSeven" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Yes, it comes by default with the CDN component</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techSalesEight">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS8" aria-expanded="true" aria-controls="collapseTS8">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Do we store customers data or they need to use other cloud service provider like AWS</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS8" class="collapse" aria-labelledby="techSalesEight" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Customer need not use any other data provider</p>
+															<ul class="pt-lg-2 pt-3">
+																<li class="color-spaceblue font-14">The data stored is not permanently stored, its ephemeral storage as its caching the origin application response.</li>
+																<li class="color-spaceblue font-14">Along with that the cached data is on a blob / S3 storage with secured access on separate VPN of the cloud.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techSalesNine">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS9" aria-expanded="true" aria-controls="collapseTS9">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Does it have any self learning capability to enhance itself, something based on AI?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS9" class="collapse" aria-labelledby="techSalesNine" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">This is the eventual goal for the kit-proxy.</p>
+															<p class="pt-lg-2 pt-3 font-14 color-spaceblue">TCurrently its in learning stage.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesTen">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS10" aria-expanded="true" aria-controls="collapseTS10">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Does POC involve any initial commercial or it FOC? also do we have requirement gathering point for POC?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS10" class="collapse" aria-labelledby="techsSalesTen" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Yes, we could provide on a case to case basis.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesEleven">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS11" aria-expanded="true" aria-controls="collapseTS11">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">How can we track the number of web requests?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS11" class="collapse" aria-labelledby="techsSalesEleven" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">With kit-proxy you can check all the request analytics from Grafana dashboard.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesTwelve">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS12" aria-expanded="true" aria-controls="collapseTS12">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">How do we know if the web request are being serving from cache or from origin server?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS12" class="collapse" aria-labelledby="techsSalesTwelve" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">From the response header, check for x-kit-source header.</p>
+															<ul class="pt-lg-2 pt-3">
+																<li class="color-spaceblue font-14">kitsune asset storage : From the cache.</li>
+																<li class="color-spaceblue font-14">kitsune origin proxy : from origin server.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesThrtn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS13" aria-expanded="true" aria-controls="collapseTS13">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">How does kitProxy protect your web application?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS13" class="collapse" aria-labelledby="techsSalesThrtn" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">kitProxy sets up a cloud based firewall to protect your web application.</p>
+															<p class="font-14 color-spaceblue">The Firewall is setup with default rules that protect you from the top most common security vulnerabilities that you can face</p>
+															<p class="font-14 color-spaceblue">We also enable additional protections such as DDoS protection, and also gives you control over the traffic that visits your website.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesFrtn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS14" aria-expanded="true" aria-controls="collapseTS14">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">How kit-proxy product is different from Riverbed&apos;s Steelhead and similar offerings like F5?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS14" class="collapse" aria-labelledby="techsSalesFrtn" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Riverbed Steelhead is majorly used within the WAN network. The performance and accelaration is limited to the the network latency within WAN network. It doesn&apos;t provide caching, compression or any customization at application level.</p>
+															<p class="font-14 color-spaceblue">F5 - AAM: Is the competition with respect to Caching and compression. But it only provides caching at LoadBalancer level.</p>
+															<p class="font-14 color-spaceblue">kit-proxy provides the caching at edge locations like CDN. F5 only caches at single location.</p>
+															<p class="font-14 color-spaceblue">kit-proxy additionally provides edge compute to customize request and response</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesFftn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS15" aria-expanded="true" aria-controls="collapseTS15">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">If the attacks comes through user interface to the applications then how does the kit-proxy support to mitigate?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS15" class="collapse" aria-labelledby="techsSalesFftn" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">If it comes through UI, it would come to kit-proxy.</p>
+															<p class="font-14 color-spaceblue">It would get held at the WAF itself.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesSxtn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS16" aria-expanded="true" aria-controls="collapseTS16">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Is there a standard time on the POC (like 1 week or 2 weeks)or it is dependent on number of applications driven by kit-proxy and should be worked out on a case to case basis?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS16" class="collapse" aria-labelledby="techsSalesSxtn" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Generally POC shold be sufficient for 2 weeks, but it can vary on a case to case basis and the application architecture</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesSvntn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS17" aria-expanded="true" aria-controls="collapseTS17">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Since kit-proxy is stored in cloud , is it possible to share latency metrics for cloud monitoring with customer?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS17" class="collapse" aria-labelledby="techsSalesSvntn" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Yes, with kit-proxy customer will get the realtime monitoring dashboard where they can verify the latency and response time.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesEgtn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS18" aria-expanded="true" aria-controls="collapseTS18">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Since the customer data is sensitive , is it possible to blacklist the unwanted traffic/data through kit-proxy?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS18" class="collapse" aria-labelledby="techsSalesEgtn" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Yes, kit-proxy can be configured to block/black list/whitelist the traffic based on</p>
+															<ul class="pt-lg-2 pt-3">
+																<li class="color-spaceblue font-14">Country,</li>
+																<li class="color-spaceblue font-14">IP address or</li>
+																<li class="color-spaceblue font-14">Specific client type / browser.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesNntn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS19" aria-expanded="true" aria-controls="collapseTS19">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">To compare with Akamai, Limelight &amp; Bitgravity, what USPs we will get from kit-proxy?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS19" class="collapse" aria-labelledby="techsSalesNntn" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">kit-proxy can provide:</p>
+															<ul class="pt-lg-2 pt-3">
+																<li class="color-spaceblue font-14">All the customization power of caching (multi tanent, header based etc..)</li>
+																<li class="color-spaceblue font-14">Custom security(CSRF),</li>
+																<li class="color-spaceblue font-14">Addition of custom functionalites like access control, dynamic ad insertion, A/B testing, image manipulation and more.</li>
+																<li class="color-spaceblue font-14">Brotli Compression as standard.</li>
+															</ul>
+															<p class="font-14 color-spaceblue">Limelight and BitGravity: Are competition at some some level. Refer competition analysis for more details</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesTwnt">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS20" aria-expanded="true" aria-controls="collapseTS20">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">USP of Kitsune / Key differentiator</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS20" class="collapse" aria-labelledby="techsSalesTwnt" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Cloud Native proxy architecture without changing a single line of code in their existing applications or to their orginal architecture.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesTwnt1">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS21" aria-expanded="true" aria-controls="collapseTS21">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">What all details you need from customer to tune the proxy to work in customer environment.</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS21" class="collapse" aria-labelledby="techsSalesTwnt1" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Pre- meet requirements shared is to ensure we gather all the details required from the customer.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesTwnt2">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS22" aria-expanded="true" aria-controls="collapseTS22">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">What will be the USP to pitch to Banks? They have Online trading / Net Banking/ Online Mutual Fund / Insurance etc</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS22" class="collapse" aria-labelledby="techsSalesTwnt2" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Cloud Native proxy architecture without changing a single line of code in their existing applications or to their orginal architecture.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsSalesTwnt3">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTS23" aria-expanded="true" aria-controls="collapseTS23">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Would Sandbox testing be possible if requested by client?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTS23" class="collapse" aria-labelledby="techsSalesTwnt3" data-parent="#accordion-1">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Yes, sendbox testing is highly recommanded befor go live to the production.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-10 d-flex justify-content-center">
+											<div class="d-inline-block"><a class="readmore orange_cta d-flex justify-content-center align-items-center" data-toggle="collapse" data-target="#sidecollapse2" aria-expanded="false" aria-controls="sidecollapse2">read more</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+								<div id="accordion-2">
+									<div class="row acc-row">
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techOne">
+													<button id="first" class="btn btn-link" data-toggle="collapse" data-target="#collapseTech1" aria-expanded="true" aria-controls="collapseTech1">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Does it creates two sessions just as other cloud proxy providers like Zscaler, bluecoat,etc?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTech1" class="collapse show" aria-labelledby="techOne" data-parent="#accordion-2">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">kit-proxy does not create a separate session of its own.</p>
+														<p class="font-14 color-spaceblue">kit-proxy ensures that the origin application session is mainted as expected by forwarding the original client IP via XFF header.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techTwo">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech2" aria-expanded="true" aria-controls="collapseTech2">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Does it have a capability to mitigate any external attack on it own or by using any digital signatures?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTech2" class="collapse" aria-labelledby="techTwo" data-parent="#accordion-2">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">In terms of security, kit-proxy have custom WAF rule engine.</p>
+														<p class="font-14 color-spaceblue">Customer can customize and add as many rules to prevent the external attacks and also can verify the digital signatures of client.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techThree">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech3" aria-expanded="true" aria-controls="collapseTech3">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">Doesn&apos;t UAT environment have far fewer real users than production, do you simulate load on proxy or how you test effectiveness?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTech3" class="collapse" aria-labelledby="techThree" data-parent="#accordion-2">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">We could simulate Load Testing / Performance testing via virtual users using external tools on UAT environment.</p>
+														<p class="font-14 color-spaceblue">We have simulated for customers up to 100K requests / second.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techFour">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech4" aria-expanded="true" aria-controls="collapseTech4">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">For B2B industries, why would accelerating internal application be a priority right now where companies are cost sensitive?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTech4" class="collapse" aria-labelledby="techFour" data-parent="#accordion-2">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Most B2B internal application in current times do not need acceleration.</p>
+														<p class="font-14 color-spaceblue">In current slowdown, we see Healthcare, BFSI, Retail are looking for acceleration as they have a lot of distributed customer base accessing their applications on mobile phones.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techFive">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech5" aria-expanded="true" aria-controls="collapseTech5">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">How does this solution address the data localization regulatory of BFSI segment?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTech5" class="collapse" aria-labelledby="techFive" data-parent="#accordion-2">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">Since this solution doesn&apos;t store any customer specific / personal information.</p>
+														<p class="font-14 color-spaceblue">The cached data stored is also ephemeral storage within the private VPN on the cloud for the customer.</p>
+														<p class="font-14 color-spaceblue">All the request transferred through kit-Proy are encrypted via SSL.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-10 faq-card">
+											<div class="card">
+												<a class="card-header" id="techSix">
+													<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTEch6" aria-expanded="true" aria-controls="collapseTEch6">
+														<div class="content">
+															<h4 class="font-16 font-semibold color-darkblue">How much customization can a customer do himself eg configuring some logic?</h4></div>
+													</button>
+												</a>
+												<div id="collapseTEch6" class="collapse" aria-labelledby="techSix" data-parent="#accordion-2">
+													<div class="card-body">
+														<p class="font-14 color-spaceblue">kit-proxy provides wide range of customization</p>
+														<ul class="pt-lg-2 pt-3">
+															<li class="color-spaceblue font-14">Using kit-proxy customer has access to 8 customization functions.</li>
+															<li class="color-spaceblue font-14">Using those functions customer can have access to various events and request/response objects which can be customized as per requirements.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="sidecollapse3">
+										<div class="row">
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techSeven">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech7" aria-expanded="true" aria-controls="collapseTech7">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">How much of an involvement and code exposure would it require from the client IT team?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTech7" class="collapse" aria-labelledby="techSeven" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Less to commence with, but with time customer usually asks the internal team to learn the functions because they would not want to pay external vendor for every customisation.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techEight">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collpaseTech8" aria-expanded="true" aria-controls="collpaseTech8">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">If customer is using akamai cdn,how kitproxy can provide any value add here?</h4></div>
+														</button>
+													</a>
+													<div id="collpaseTech8" class="collapse" aria-labelledby="techEight" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Since Akamai CDN is providing all the values of CDN, kit-proxy can provide:</p>
+															<ul class="pt-lg-2 pt-3">
+																<li class="color-spaceblue font-14">All the customization power of caching (multi tanent, header based etc..)</li>
+																<li class="color-spaceblue font-14">Custom security(CSRF),</li>
+																<li class="color-spaceblue font-14">Addition of custom functionalites like access control, dynamic ad insertion, A/B testing, image manipulation and more.</li>
+																<li class="color-spaceblue font-14">Brotli Compression as standard.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techNine">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech9" aria-expanded="true" aria-controls="collapseTech9">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">If for example an application that allows salesmen to book sales in system from field, every request will have to go to application server. How would kit-proxy speed up the application?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTech9" class="collapse" aria-labelledby="techNine" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">In case of dynamic request(insert data to db), kit-proxy will provide tunnel directly to the end application, there won&apos;t be any accelaration.</p>
+															<p class="font-14 color-spaceblue">But since the request is passing via kit-proxy, it will be trasfered via dedicated private network of Cloud, hence the latency would be decresed(in miliseconds)</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techTen">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech10" aria-expanded="true" aria-controls="collapseTech10">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Is it an On-Premise hardware with server like capabilities e.g. memory , processing etc?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTech10" class="collapse" aria-labelledby="techTen" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">kit-proxy is purely on cloud with cloud native components.</p>
+															<p class="font-14 color-spaceblue">Customer does not need to provide any memory or processing requirement, it will scale automatically based on the requirement.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techEleven">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech11" aria-expanded="true" aria-controls="collapseTech11">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Should customer need to point his meta data toward Kit proxy?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTech11" class="collapse" aria-labelledby="techEleven" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">kit-proxy expects the meta-data info, as it gives customer control to define the caching properties at kit-proxy level.</p>
+															<p class="font-14 color-spaceblue">If meta data is not provided kit-proxy would assume a default configuration for that application.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techsTwelve">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech12" aria-expanded="true" aria-controls="collapseTech12">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">Tell us more about Data Flow for a server connection? How does it differently handle it vis a vis CDN and Load balancer ?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTech12" class="collapse" aria-labelledby="techsTwelve" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">All the request / data will travel via kit-proxy middleware.</p>
+															<p class="font-14 color-spaceblue">CDN will only check against the request path and parameters for the response to be served from Cache or Origin</p>
+															<p class="font-14 color-spaceblue">kit-proxy customers can customize the logic to cache the content based on various parameters (i.e Headers, Browsers, Location, Cookies etc)</p>
+															<p class="font-14 color-spaceblue">With respect to LoadBalancer, kit-proxy can be setup on top of LoadBalancer. Kit-proxy and LoadBalancer&apos;s purpose are different.</p>
+															<p class="font-14 color-spaceblue">kit-proxy is used for performance improvement via caching and security via customizations where LoadBalancer&apos;s task is to distribute the request + standard security features</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techThrtn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech13" aria-expanded="true" aria-controls="collapseTech13">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">When it stores customer data on cloud, how do we ensure the security of data?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTech13" class="collapse" aria-labelledby="techThrtn" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">The data stored is not permanent storage, its ephemeral storage as its caching the origin application response.</p>
+															<p class="font-14 color-spaceblue">Moreover the cached data is on a blob/S3 storage with secured access on separate VPN of the cloud.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-10 faq-card">
+												<div class="card">
+													<a class="card-header" id="techFrtn">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTech14" aria-expanded="true" aria-controls="collapseTech14">
+															<div class="content">
+																<h4 class="font-16 font-semibold color-darkblue">How kit-proxy product is different from Riverbed&apos;s Steelhead and similar offerings like F5?</h4></div>
+														</button>
+													</a>
+													<div id="collapseTech14" class="collapse" aria-labelledby="techFrtn" data-parent="#accordion-2">
+														<div class="card-body">
+															<p class="font-14 color-spaceblue">Riverbed Steelhead is majorly used within the WAN network. The performance and accelaration is limited to the the network latency within WAN network. It doesn&apos;t provide caching, compression or any customization at application level.</p>
+															<p class="font-14 color-spaceblue">F5 - AAM: Is the competition with respect to Caching and compression. But it only provides caching at LoadBalancer level.</p>
+															<p class="font-14 color-spaceblue">kit-proxy provides the caching at edge locations like CDN. F5 only caches at single location.</p>
+															<p class="font-14 color-spaceblue">kit-proxy additionally provides edge compute to customize request and response</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-10 d-flex justify-content-center">
+											<div class="d-inline-block"><a class="readmore orange_cta d-flex justify-content-center align-items-center" data-toggle="collapse" data-target="#sidecollapse3" aria-expanded="false" aria-controls="sidecollapse3">read more</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="trust-kitsune bg-orange">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 d-flex justify-content-center align-items-center text-center">
+						<h3 class="font-42 text-white d-inline-block"><span>Get started with</span> kit-proxy</h3></div>
+					<div class="col-lg-12 d-flex justify-content-center align-items-center pt-5"><a href="#" class="white_cta color-orange d-flex justify-content-center align-items-center" alt="proxy-start">Accelerate <span class="ml-1">Now</span></a></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer" style="bottom:0;width:100%" k-partial>
+		<div class="container">
+			<div class="row m-0">
+				<div class="col-lg-6 col-md-4 col-12 pb-5 pb-lg-0">
+					<a href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" alt="Kitsune logo"></a>
+					<h5 class="tag-line font-14 mt-3">Accelerate <span>|</span> Build <span>|</span> Consult</h5>
+					<!-- <div class="d-inline-block d-lg-none mx-auto pt-4"><a href="https://ide.kitsune.tools/" class="orange_cta d-flex justify-content-between align-items-center">sign up <span class="ml-1">for free</span></a></div> -->
+					<div class="d-flex mt-5">
+						<a href="https://github.com/GetKitsune" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/stackoverflow.svg" alt="Stackoverflow Icon" title="Stackoverflow"></a>
+						<a href="https://www.facebook.com/GetKitsune/" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/fb.svg" alt="Facebook Icon" title="Facebook"></a>
+						<a href="https://twitter.com/getkitsune" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/twitter.svg" alt="Twitter Icon" title="Twitter"></a>
+						<a href="https://www.linkedin.com/company/kitsune-technologies/" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/linkedin.svg" alt="LinkedIn Icon" title="LinkedIn"></a>
+					</div>
+					<div>
+						<h6 class="font-12 mt-3">&#xA9;<script>var date=new Date;document.write(`${date.getFullYear()} `)</script>NowFloats Technologies Ltd.</h6></div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">kit-proxy</h5>
+						<li><a href="overview.html"><h6>Overview</h6></a></li>
+						<li><a href="casestudies_1.html"><h6>Case Studies</h6></a></li>
+						<li><a href="faqs_1.html"><h6>FAQs</h6></a></li>
+					</ul>
+				</div>
+				<!-- <div class="col-lg-2 col-md-4 col-6">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">kitsune Framework</h5>
+						<li><a href="overview_1.html"><h6>Overview</h6></a></li>
+						<li><a href="developers.html"><h6>Developers</h6></a></li>
+						<li><a href="casestudies.html"><h6>Case Studies</h6></a></li>
+						<li><a href="documentation.html"><h6>Documentation</h6></a></li>
+						<li><a href="faqs.html"><h6>FAQs</h6></a></li>
+					</ul>
+				</div> -->
+				<div class="col-lg-2 col-md-4">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">Company</h5>
+						<li><a href="company.html"><h6>About us</h6></a></li>
+						<li><a href="company.html#connect-with-us"><h6>Work with us</h6></a></li>
+						<li><a href="policy.html"><h6>Privacy Policy</h6></a></li>
+						<li><a href="terms.html"><h6>Usage Terms</h6></a></li>
+						<li><a href="caution-notice.html"><h6>Caution Notice</h6></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/new.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/setup_owl.min.js" charset="utf-8"></script>
+	<script>
+	$(document).ready(function() {
+		$(document.body).prepend('<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV2WGNQ" height="0" width="0" style="display:none;visibility:hidden"><\/iframe><\/noscript>');
+		let n = window.location.pathname.split("/"),
+			t = n[1];
+		switch(t) {
+			case "kitproxy":
+				{
+					$("#kit-proxy-menu").addClass("d-flex").removeClass("d-none");
+					$("#kit-proxy-mobile-menu").removeClass("d-none");
+					let t = n[3];
+					$(`#kit-proxy-menu .nav-item:contains(${t})`).addClass("active")
+				}
+				break;
+			case "kitsuneframework":
+				{
+					$("#proxy-framework-menu").addClass("d-flex").removeClass("d-none");
+					$("#proxy-framework-mobile-menu").removeClass("d-none");
+					let t = n[3];
+					$(`#proxy-framework-menu .nav-item:contains(${t})`).addClass("active")
+				}
+				break;
+			default:
+				$("#proxy-framework-menu").removeClass("d-flex").addClass("d-none");
+				$("#proxy-framework-mobile-menu").addClass("d-none");
+				$("#kit-proxy-menu").removeClass("d-flex").addClass("d-none");
+				$("#kit-proxy-mobile-menu").addClass("d-none")
+		}
+		window.location.pathname.includes("index.html") && window.location.replace("/")
+	})
+	</script><span style="display:none" id="GET-VALUE(THEME-ID)">5f84523f2c596200013ff0dd</span><span style="display:none" id="GET-VALUE(WEBSITE-ID)">5f84523f2c596200013ff0df</span>
+	<a style="display:none" href="index.html" id="GET-URL(HOME)"></a>
+</body>
+
+</html>

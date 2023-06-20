@@ -1,0 +1,14 @@
+<svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1" fill="white">
+<rect x="2" y="5" width="39" height="25" rx="2"/>
+</mask>
+<rect x="2" y="5" width="39" height="25" rx="2" fill="#F06428" stroke="#F06428" stroke-width="4.5" mask="url(#path-1-inside-1)"/>
+<mask id="path-2-inside-2" fill="white">
+<rect width="43" height="7" rx="2"/>
+</mask>
+<rect width="43" height="7" rx="2" stroke="#F06428" stroke-width="4.5" mask="url(#path-2-inside-2)"/>
+<line x1="21.8281" y1="29.1025" x2="21.8281" y2="39.4679" stroke="#F06428" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 35.5L22 29.5L28 35.5" stroke="#F06428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="21.1667" cy="16.0962" rx="7.16667" ry="7.09615" fill="white"/>
+<path d="M21.168 12.5479V16.8844H24.7513" stroke="#F06428" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

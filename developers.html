@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="Kitsuneframework developers guide helps you get started with it and build serverless applications. Learn here about our Data Types, Data models, Language attributes and functions.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Serverless Framework Developers guide - Kitsuneframework</title>
+	<link rel="canonical" href="https://www.getkitsune.com/kitsuneframework/developers">
+	<link rel="stylesheet" href="css/override_margin_docs.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/all.min.css" k-partial>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/owl.carousel.1623660495083.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/webform.css">
+	<link rel="icon" type="image/png" href="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/favicon.png">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88828396-4"></script>
+	<script>
+	function gtag() {
+		dataLayer.push(arguments)
+	}
+	window.dataLayer = window.dataLayer || [];
+	gtag("js", new Date);
+	gtag("config", "UA-88828396-4")
+	</script>
+	<script>
+	(function(n, t, i, r, u) {
+		n[r] = n[r] || [];
+		n[r].push({
+			"gtm.start": (new Date).getTime(),
+			event: "gtm.js"
+		});
+		var e = t.getElementsByTagName(i)[0],
+			f = t.createElement(i),
+			o = r != "dataLayer" ? "&l=" + r : "";
+		f.async = !0;
+		f.src = "https://www.googletagmanager.com/gtm.js?id=" + u + o;
+		e.parentNode.insertBefore(f, e)
+	})(window, document, "script", "dataLayer", "GTM-MV2WGNQ")
+	</script>
+	<link rel="stylesheet" href="js/arrow_carousel.js" type="text/css" media="all">
+</head>
+
+<body class="home proxy-page developers">
+	<header class="header" k-partial>
+		<nav class="navbar navbar-expand-xl">
+			<div class="container">
+				<a class="navbar-brand d-xl-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+<div class="d-flex justify-content-start align-items-center">
+					<!-- <a class="font-14 color-spaceblue text-uppercase p-0 mr-2 d-lg-none" href="login.html">login</a> -->					<button class="navbar-toggler" type="button"><span></span> <span></span> <span></span></button>
+				</div>
+				<div class="nav-1 navbar-collapse form-inline" id="navbarSupportedContent">
+					<a class="navbar-brand d-xl-block d-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+					<ul class="navbar-nav col-xl-6 ml-auto d-flex justify-content-start align-items-center">
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle first-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#181F39" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>kit-proxy</h5></a></li>
+								<!-- <li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview_1.html"><h5>kitsune framework</h5></a></li> -->
+							</ul>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li> -->
+												<!-- <li class="nav-item"><a class="nav-link" href="https://blog.getkitsune.com">blog</a></li> -->
+
+						<li class="nav-item"><a class="nav-link" href="company.html">company</a></li>
+					</ul>
+					<ul class="navbar-nav col-xl-4 d-lg-flex justify-content-end align-items-center">
+						<li class="nav-item"><a class="nav-link" href="scheduleameet.html">Schedule a meet</a></li>
+						<!-- <li class="nav-item"><a class="nav-link" href="https://dashboard.kitsune.tools/" target="_blank">login</a></li> -->
+						<li class="nav-item"><a href="https://proxy-dashboard.getkitsune.com/login" class="orange_cta d-flex justify-content-center align-items-center">login</a></li>
+					</ul>
+					<div class="position-relative w-100 d-none align-items-center" id="kit-proxy-menu">
+						<ul class="mt-md-4 categories col-lg-4 navbar-nav d-flex justify-content-between">
+							<li class="nav-item d-flex justify-content-center align-items-center">
+								<h4 class="font-15 font-semibold">kit-proxy</h4></li>
+							<li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+							<li class="nav-item"><a class="nav-link" href="casestudies_1.html">Case Studies</a></li>
+							<li class="nav-item"><a class="nav-link" href="faqs_1.html">FAQs</a></li>
+						</ul>
+					</div>
+					<!-- <div class="position-relative w-100 d-none align-items-center" id="proxy-framework-menu">
+						<ul class="mt-md-4 categories col-lg-12 navbar-nav d-flex justify-content-start">
+							<li class="nav-item d-flex justify-content-center align-items-center">
+								<h4 class="font-15 font-semibold">kitsune Framework</h4></li>
+							<li class="nav-item"><a class="nav-link" href="overview_1.html">Overview</a></li>
+							<li class="nav-item"><a class="nav-link" href="developers.html">Developers</a></li>
+							<li class="nav-item"><a class="nav-link" href="casestudies.html">Case Studies</a></li>
+							<li class="nav-item"><a class="nav-link" href="documentation.html">Documentation</a></li>
+							<li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+		</nav>
+		<div class="navbar mob-nav d-xl-none d-none" id="kit-proxy-mobile-menu">
+			<div class="container py-0 pr-0">
+				<h4 class="font-15 font-semibold">kit-proxy</h4>
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown d-block"><a class="nav-link dropdown-toggle font-14 text-capitalize d-flex justify-content-between align-items-center" href="faqs_1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#F06428" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="casestudies_1.html"><h5>Case studies</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>Overview</h5></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="navbar mob-nav d-xl-none d-none" id="proxy-framework-mobile-menu">
+			<!-- <div class="container py-0 pr-0">
+				<h4 class="font-15 font-semibold">kitsune framework</h4>
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown d-block"><a class="nav-link dropdown-toggle font-14 text-capitalize d-flex justify-content-between align-items-center" href="overview_1.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overview <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#F06428" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="casestudies.html"><h5>Case studies</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="developers.html"><h5>Developers</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="documentation.html"><h5>Documentation</h5></a></li>
+							<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="faqs.html"><h5>FAQs</h5></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div> -->
+		</div>
+		<nav class="navbar navbar-expand-xl" id="main_nav">
+			<div class="container">
+				<a class="navbar-brand d-xl-none" href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+				<button class="navbar-toggler"><span></span> <span></span> <span></span></button>
+				<div class="w-100 form-inline px-3 pt-5" id="navbarSupportedContent">
+					<a class="navbar-brand d-xl-block d-none" href="index_1.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" class="img-fluid" alt="Kitsune"></a>
+					<ul class="navbar-nav col-xl-6 ml-auto d-flex justify-content-start align-items-start">
+						<li class="nav-item dropdown d-flex flex-column align-items-start"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5.5 5L10 1" stroke="#181F39" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview.html"><h5>kit-proxy</h5></a></li>
+								<!-- <li class="dropdown-submenu"><a class="dropdown-item main-items" tabindex="-1" href="overview_1.html"><h5>kitsune framework</h5></a></li> -->
+							</ul>
+						</li>
+						<!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li> -->
+												<!-- <li class="nav-item"><a class="nav-link" href="https://blog.getkitsune.com">blog</a></li> -->
+
+						<li class="nav-item"><a class="nav-link" href="company.html">company</a></li>
+					</ul>
+					<ul class="navbar-nav col-xl-4 d-lg-flex justify-content-end align-items-start">
+						<li class="nav-item"><a class="nav-link" href="scheduleameet.html">Schedule a meet</a></li>
+						<!-- <li class="nav-item login"><a class="nav-link" href="https://dashboard.kitsune.tools/" target="_blank">login</a></li> -->
+						<li class="nav-item sign-up"><a href="https://proxy-dashboard.getkitsune.com/login" class="orange_cta d-flex justify-content-center align-items-center">login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="banner bg-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 d-flex flex-column justify-content-center align-items-lg-start">
+						<div class="banner-text">
+							<h1 class="font-60">Build and Deploy applications easily with <span>Serverless Framework Developers guide</span></h1>
+							<p class="font-18 color-spaceblue mt-2">Develop applications with pace, accuracy with a powerful serverless framework. Kitsune allows front-end developers to deploy applications on the cloud with zero back-end knowledge.</p>
+							<div class="d-md-flex flex-wrap align-items-center justify-content-start w-100 mt-4">
+								<div class="d-inline-block"><a href="https://dashboard.kitsune.tools" class="orange_cta d-flex justify-content-between align-items-center" target="_blank">create account</a></div>
+								<div class="pt-md-0 pt-3"><a href="scheduleameet.html" class="orange-link d-flex justify-content-center align-items-center">schedule a meet <svg class="orange-link-hover" width="14" height="25" viewbox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9939 12.7713C13.9939 12.2113 13.7581 11.6513 13.3807 11.2313L4.41867 1.57163C3.94699 1.05831 3.33379 0.77832 2.62626 0.77832C2.01307 0.77832 1.44705 1.01165 0.975363 1.43163C-0.0151775 2.31827 -0.0623458 3.85823 0.833858 4.8382L7.43746 11.9313L8.33367 12.8646L7.43746 13.7979L0.833858 20.891C-0.0623458 21.871 -0.0151775 23.3643 0.975363 24.2976C1.44705 24.7176 2.01307 24.9509 2.62626 24.9509C3.33379 24.9509 3.94699 24.6709 4.41867 24.1576L13.3807 14.4979C13.7581 14.0779 13.9939 13.5179 13.9939 12.958V12.9113V12.8646V12.7713Z" fill="#F06428"/></svg></a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 d-flex justify-content-center align-items-center p-0"><img src="images/build_deploy.png" class="img-fluid banner-image" alt="Serverless Application Build &amp; Deploy" title="Application Build &amp; Deploy"></div>
+				</div>
+			</div>
+		</section>
+		<section class="serverless-applications-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 mx-auto text-center pb-5">
+						<h3 class="font-42"><span>Effective Solutions</span> for your workflow</h3></div>
+					<div class="col-lg-4">
+						<div class="card application-card border-0 bg-transparent">
+							<div class="image-container"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/kit-proxy/serverless-applications-1.svg" alt="Experience Icon" title="Improve UX with Serverless Framework"></div>
+							<div class="card-body px-0">
+								<h4 class="font-22 color-darkblue">Experience matters</h4>
+								<h5 class="content font-14 color-spacegray pt-2">Work on the user experience of your product with ease. Leave the heavy lifting of the back-end to us</h5></div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card application-card border-0 bg-transparent">
+							<div class="image-container"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/kit-proxy/serverless-applications-2.svg" alt="Deliver projects early Icon" title="Deliver projects faster"></div>
+							<div class="card-body px-0">
+								<h4 class="font-22 color-darkblue">Deliver projects early</h4>
+								<h5 class="content font-14 color-spacegray pt-2">With no dependency on the backend deploy applications faster. Automate the back-end and build new features and enhance your applications</h5></div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card application-card border-0 bg-transparent">
+							<div class="image-container"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/kit-proxy/serverless-applications-3.svg" alt="Develop X times faster Icon" title="Develop X times faster applications"></div>
+							<div class="card-body px-0">
+								<h4 class="font-22 color-darkblue">Develop X times faster</h4>
+								<h5 class="content font-14 color-spacegray pt-2">Enable UX developers to build and deploy applications on the cloud</h5></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="development bg-blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 d-flex flex-column align-items-lg-start">
+						<div class="development-text w-100">
+							<h3 class="font-42">Enhance your <span>development efficiency</span></h3>
+							<p class="font-14 color-spaceblue mt-2">Developers with great productivity deserve great tools. Work on the user experience of your product with ease, leave the heavy lifting of the back-end to us</p>
+						</div>
+					</div>
+					<div class="col-lg-6 offset-lg-1 d-flex justify-content-center align-items-center px-0 px-lg-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/developers/enhance_development.png" class="img-fluid banner-image w-100" alt="Enhance Development Image" title="Enhance Development"></div>
+				</div>
+			</div>
+		</section>
+		<section class="explore-docs">
+			<div class="container-fluid">
+				<div class="row m-0">
+					<div class="col-xl-5 col-lg-7 mx-auto text-center pb-5 p-0">
+						<h3 class="font-42">Explore our <span>docs</span></h3></div>
+				</div>
+				<div class="row m-0">
+					<div class="owl-carousel" id="docs">
+						<div class="col-lg-12 h-100">
+							<div class="item">
+								<div class="card doc-cards doc-1 border-0">
+									<div class="card-body d-flex flex-column">
+										<h4 class="font-22 color-white">Data types</h4>
+										<p class="card-copy font-14 color-white mt-2">Kitsune property is a datafield that defines the type specific storage and access in Kitsune tags and k-admin. Kitsune property can be defined by following meta information.</p>
+										<div class="mt-5"><a href="documentation.html" class="read-more white-link d-flex justify-content-start align-items-center text-capitalize">Learn more <svg class="ml-2" width="6" height="12" viewbox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9939 12.7713C13.9939 12.2113 13.7581 11.6513 13.3807 11.2313L4.41867 1.57163C3.94699 1.05831 3.33379 0.77832 2.62626 0.77832C2.01307 0.77832 1.44705 1.01165 0.975363 1.43163C-0.0151775 2.31827 -0.0623458 3.85823 0.833858 4.8382L7.43746 11.9313L8.33367 12.8646L7.43746 13.7979L0.833858 20.891C-0.0623458 21.871 -0.0151775 23.3643 0.975363 24.2976C1.44705 24.7176 2.01307 24.9509 2.62626 24.9509C3.33379 24.9509 3.94699 24.6709 4.41867 24.1576L13.3807 14.4979C13.7581 14.0779 13.9939 13.5179 13.9939 12.958V12.9113V12.8646V12.7713Z" fill="#FFFFFF"/></svg></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 h-100">
+							<div class="item">
+								<div class="card doc-cards doc-2 border-0">
+									<div class="card-body d-flex flex-column">
+										<h4 class="font-22 color-white">Data models</h4>
+										<p class="card-copy font-14 color-white mt-2">Each application requires a different data structure and we at Kitsune understand it. Hence we always give data models their own structure.</p>
+										<div class="mt-5"><a href="documentation.html" class="read-more white-link d-flex justify-content-start align-items-center text-capitalize">Learn more <svg class="ml-2" width="6" height="12" viewbox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9939 12.7713C13.9939 12.2113 13.7581 11.6513 13.3807 11.2313L4.41867 1.57163C3.94699 1.05831 3.33379 0.77832 2.62626 0.77832C2.01307 0.77832 1.44705 1.01165 0.975363 1.43163C-0.0151775 2.31827 -0.0623458 3.85823 0.833858 4.8382L7.43746 11.9313L8.33367 12.8646L7.43746 13.7979L0.833858 20.891C-0.0623458 21.871 -0.0151775 23.3643 0.975363 24.2976C1.44705 24.7176 2.01307 24.9509 2.62626 24.9509C3.33379 24.9509 3.94699 24.6709 4.41867 24.1576L13.3807 14.4979C13.7581 14.0779 13.9939 13.5179 13.9939 12.958V12.9113V12.8646V12.7713Z" fill="#FFFFFF"/></svg></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 h-100">
+							<div class="item">
+								<div class="card doc-cards doc-3 border-0">
+									<div class="card-body d-flex flex-column">
+										<h4 class="font-22 color-white">Language attributes</h4>
+										<p class="card-copy font-14 color-white mt-2">An attribute on the html tag sets the language for all the text on the page. If part of the page uses text in a different you can add a language</p>
+										<div class="mt-5"><a href="documentation.html" class="read-more white-link d-flex justify-content-start align-items-center text-capitalize">Learn more <svg class="ml-2" width="6" height="12" viewbox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9939 12.7713C13.9939 12.2113 13.7581 11.6513 13.3807 11.2313L4.41867 1.57163C3.94699 1.05831 3.33379 0.77832 2.62626 0.77832C2.01307 0.77832 1.44705 1.01165 0.975363 1.43163C-0.0151775 2.31827 -0.0623458 3.85823 0.833858 4.8382L7.43746 11.9313L8.33367 12.8646L7.43746 13.7979L0.833858 20.891C-0.0623458 21.871 -0.0151775 23.3643 0.975363 24.2976C1.44705 24.7176 2.01307 24.9509 2.62626 24.9509C3.33379 24.9509 3.94699 24.6709 4.41867 24.1576L13.3807 14.4979C13.7581 14.0779 13.9939 13.5179 13.9939 12.958V12.9113V12.8646V12.7713Z" fill="#FFFFFF"/></svg></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 h-100">
+							<div class="item">
+								<div class="card doc-cards doc-4 border-0">
+									<div class="card-body d-flex flex-column">
+										<h4 class="font-22 color-white">Language functions</h4>
+										<p class="card-copy font-14 color-white mt-2">Kitsune langauge provides system level functions for language utility.</p>
+										<div class="mt-5"><a href="documentation.html" class="read-more white-link d-flex justify-content-start align-items-center text-capitalize">Learn more <svg class="ml-2" width="6" height="12" viewbox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9939 12.7713C13.9939 12.2113 13.7581 11.6513 13.3807 11.2313L4.41867 1.57163C3.94699 1.05831 3.33379 0.77832 2.62626 0.77832C2.01307 0.77832 1.44705 1.01165 0.975363 1.43163C-0.0151775 2.31827 -0.0623458 3.85823 0.833858 4.8382L7.43746 11.9313L8.33367 12.8646L7.43746 13.7979L0.833858 20.891C-0.0623458 21.871 -0.0151775 23.3643 0.975363 24.2976C1.44705 24.7176 2.01307 24.9509 2.62626 24.9509C3.33379 24.9509 3.94699 24.6709 4.41867 24.1576L13.3807 14.4979C13.7581 14.0779 13.9939 13.5179 13.9939 12.958V12.9113V12.8646V12.7713Z" fill="#FFFFFF"/></svg></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 h-100">
+							<div class="item">
+								<div class="card doc-cards doc-1 border-0">
+									<div class="card-body d-flex flex-column">
+										<h4 class="font-22 color-white">Data models</h4>
+										<p class="card-copy font-14 color-white mt-2">Each application requires a different data structure and we at Kitsune understand it. Hence we always give data models their own structure.</p>
+										<div class="mt-5"><a href="documentation.html" class="read-more white-link d-flex justify-content-start align-items-center text-capitalize">Learn more <svg class="ml-2" width="6" height="12" viewbox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.9939 12.7713C13.9939 12.2113 13.7581 11.6513 13.3807 11.2313L4.41867 1.57163C3.94699 1.05831 3.33379 0.77832 2.62626 0.77832C2.01307 0.77832 1.44705 1.01165 0.975363 1.43163C-0.0151775 2.31827 -0.0623458 3.85823 0.833858 4.8382L7.43746 11.9313L8.33367 12.8646L7.43746 13.7979L0.833858 20.891C-0.0623458 21.871 -0.0151775 23.3643 0.975363 24.2976C1.44705 24.7176 2.01307 24.9509 2.62626 24.9509C3.33379 24.9509 3.94699 24.6709 4.41867 24.1576L13.3807 14.4979C13.7581 14.0779 13.9939 13.5179 13.9939 12.958V12.9113V12.8646V12.7713Z" fill="#FFFFFF"/></svg></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="join-community bg-blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 mx-auto">
+						<div class="card community-card border-0 bg-transparent d-flex flex-md-row">
+							<div class="community-img"><img src="images/join_community.png" alt="Join Community Image" title="Join Community"></div>
+							<div class="card-body py-0 pt-3 pt-lg-0">
+								<h4 class="font-30"><span>Join the </span>Community of Developers <span>who love kitsune</span></h4>
+								<div class="d-inline-block mt-3"><a href="https://dashboard.kitsune.tools" class="orange_cta d-flex justify-content-center align-items-center" target="_blank">Create Account</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer" style="bottom:0;width:100%" k-partial>
+		<div class="container">
+			<div class="row m-0">
+				<div class="col-lg-6 col-md-4 col-12 pb-5 pb-lg-0">
+					<a href="index.html"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/home/logo.svg" alt="Kitsune logo"></a>
+					<h5 class="tag-line font-14 mt-3">Accelerate <span>|</span> Build <span>|</span> Consult</h5>
+					<!-- <div class="d-inline-block d-lg-none mx-auto pt-4"><a href="https://ide.kitsune.tools/" class="orange_cta d-flex justify-content-between align-items-center">sign up <span class="ml-1">for free</span></a></div> -->
+					<div class="d-flex mt-5">
+						<a href="https://github.com/GetKitsune" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/stackoverflow.svg" alt="Stackoverflow Icon" title="Stackoverflow"></a>
+						<a href="https://www.facebook.com/GetKitsune/" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/fb.svg" alt="Facebook Icon" title="Facebook"></a>
+						<a href="https://twitter.com/getkitsune" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/twitter.svg" alt="Twitter Icon" title="Twitter"></a>
+						<a href="https://www.linkedin.com/company/kitsune-technologies/" class="d-block mr-3"><img src="//kit-cdn.com/5f84523f2c596200013ff0dd/v25/img/footer/linkedin.svg" alt="LinkedIn Icon" title="LinkedIn"></a>
+					</div>
+					<div>
+						<h6 class="font-12 mt-3">&#xA9;<script>var date=new Date;document.write(`${date.getFullYear()} `)</script>NowFloats Technologies Ltd.</h6></div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-6">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">kit-proxy</h5>
+						<li><a href="overview.html"><h6>Overview</h6></a></li>
+						<li><a href="casestudies_1.html"><h6>Case Studies</h6></a></li>
+						<li><a href="faqs_1.html"><h6>FAQs</h6></a></li>
+					</ul>
+				</div>
+				<!-- <div class="col-lg-2 col-md-4 col-6">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">kitsune Framework</h5>
+						<li><a href="overview_1.html"><h6>Overview</h6></a></li>
+						<li><a href="developers.html"><h6>Developers</h6></a></li>
+						<li><a href="casestudies.html"><h6>Case Studies</h6></a></li>
+						<li><a href="documentation.html"><h6>Documentation</h6></a></li>
+						<li><a href="faqs.html"><h6>FAQs</h6></a></li>
+					</ul>
+				</div> -->
+				<div class="col-lg-2 col-md-4">
+					<ul class="mb-0 footer-links">
+						<h5 class="pb-3">Company</h5>
+						<li><a href="company.html"><h6>About us</h6></a></li>
+						<li><a href="company.html#connect-with-us"><h6>Work with us</h6></a></li>
+						<li><a href="policy.html"><h6>Privacy Policy</h6></a></li>
+						<li><a href="terms.html"><h6>Usage Terms</h6></a></li>
+						<li><a href="caution-notice.html"><h6>Caution Notice</h6></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/new.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/setup_owl.min.js" charset="utf-8"></script>
+	<script>
+	$(document).ready(function() {
+		$(document.body).prepend('<noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV2WGNQ" height="0" width="0" style="display:none;visibility:hidden"><\/iframe><\/noscript>');
+		let n = window.location.pathname.split("/"),
+			t = n[1];
+		switch(t) {
+			case "kitproxy":
+				{
+					$("#kit-proxy-menu").addClass("d-flex").removeClass("d-none");
+					$("#kit-proxy-mobile-menu").removeClass("d-none");
+					let t = n[3];
+					$(`#kit-proxy-menu .nav-item:contains(${t})`).addClass("active")
+				}
+				break;
+			case "kitsuneframework":
+				{
+					$("#proxy-framework-menu").addClass("d-flex").removeClass("d-none");
+					$("#proxy-framework-mobile-menu").removeClass("d-none");
+					let t = n[3];
+					$(`#proxy-framework-menu .nav-item:contains(${t})`).addClass("active")
+				}
+				break;
+			default:
+				$("#proxy-framework-menu").removeClass("d-flex").addClass("d-none");
+				$("#proxy-framework-mobile-menu").addClass("d-none");
+				$("#kit-proxy-menu").removeClass("d-flex").addClass("d-none");
+				$("#kit-proxy-mobile-menu").addClass("d-none")
+		}
+		window.location.pathname.includes("index.html") && window.location.replace("/")
+	})
+	</script>
+	<script src="js/add_arrows.min.js" charset="utf-8"></script><span style="display:none" id="GET-VALUE(THEME-ID)">5f84523f2c596200013ff0dd</span><span style="display:none" id="GET-VALUE(WEBSITE-ID)">5f84523f2c596200013ff0df</span>
+	<a style="display:none" href="index.html" id="GET-URL(HOME)"></a>
+</body>
+
+</html>
