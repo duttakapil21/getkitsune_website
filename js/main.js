@@ -721,12 +721,23 @@ function validateMobile(mobile) {
   return mobileRegex.test(mobile);
 }
 
+function resetForm() {
+  document.getElementById('firstName').value = '';
+  document.getElementById('lastName').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('city').value = '';
+  document.getElementById('mobile').value = '';
+  document.getElementById('company').value = '';
+  document.getElementById('datetime').value = '';
+  document.getElementById('background').value = '';
+}
 // Function to handle form submission
 function handleSubmit(event) {
   event.preventDefault(); // Prevent form submission
 
   // Retrieve form data
-  var name = document.getElementById('name').value;
+  var firstName = document.getElementById('firstName').value;
+  var lastName = document.getElementById('lastName').value;
   var email = document.getElementById('email').value;
   var city = document.getElementById('city').value;
   var mobile = document.getElementById('mobile').value;
@@ -735,7 +746,7 @@ function handleSubmit(event) {
   var background = document.getElementById('background').value;
 
   // Validate form data
-  if (!name || !email || !city || !mobile || !company || !datetime || !background) {
+  if (!firstName || !lastName || !email || !city || !mobile || !company || !datetime || !background) {
     alert('Please fill in all required fields.');
     return;
   }
@@ -752,7 +763,8 @@ function handleSubmit(event) {
 
   // Create data object to send
   var data = {
-    name: name,
+    firsyName: firstName,
+    lastName:lastName,
     email: email,
     city: city,
     mobile: mobile,
@@ -780,6 +792,7 @@ function handleSubmit(event) {
       // Handle the response data
       // console.log(data);
       alert('Someone from Kitsune will be in touch with you shortly.');
+      resetForm();
     })
     .catch(function(error) {
       // Handle any errors that occurred during the request
