@@ -460,7 +460,7 @@ const password = false
 function checkPassword() {
   var x = document.getElementById("password").value
   var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-  console.log(x)
+  // console.log(x)
   if (x.match(passw)) {
     this.password = true
     document.getElementById("passStrong").style.display = "block"
@@ -470,7 +470,7 @@ function checkPassword() {
     document.getElementById("passStrong").style.display = "none"
     document.getElementById("passWeak").style.display = "block"
   }
-  console.log(this.password)
+  // console.log(this.password)
 }
 
 const signUpButton = document.getElementById('signUp');
@@ -503,7 +503,7 @@ function emailCheck () {
       this.checkEmail = false
       document.getElementById("emailtick").style.display = "none"
     }
-    console.log(this.checkEmail)
+    // console.log(this.checkEmail)
 }
 
 function numberCheck () {
@@ -516,7 +516,7 @@ function numberCheck () {
       this.checkNumber = false
       document.getElementById("numbertick").style.display = "none"
     }
-    console.log(this.checkNumber)
+    // console.log(this.checkNumber)
 }
 
 function websiteCheck() {
@@ -529,7 +529,7 @@ function websiteCheck() {
       this.checkWebsite = false
       document.getElementById("websitetick").style.display = "none"
     }
-    console.log(this.checkWebsite)
+    // console.log(this.checkWebsite)
 }
 
 function cardSection() {
@@ -555,7 +555,7 @@ var selectedDayBlock = null;
 
 const renderCalendar = () => {
   date.setDate(1);
-  console.log(date);
+  // console.log(date);
   const monthDays = document.querySelector(".days");
 
   const lastDay = new Date(
@@ -564,7 +564,7 @@ const renderCalendar = () => {
     0
   ).getDate();
 
-  console.log(lastDay, 'last Day');
+  // console.log(lastDay, 'last Day');
 
   const prevLastDay = new Date(
     date.getFullYear(),
@@ -582,13 +582,13 @@ const renderCalendar = () => {
 
   const total = firstDayIndex + lastDay
 
-  console.log(total);
+  // console.log(total);
   
   const remaining = (total%7)? 7 - (total%7): 0
-  console.log('rem',remaining);
+  // console.log('rem',remaining);
   const nextDays = 7 - lastDayIndex - 1;
 
-  console.log('previous last day',prevLastDay,'first day index', firstDayIndex, 'lastdayIndex',lastDayIndex)
+  // console.log('previous last day',prevLastDay,'first day index', firstDayIndex, 'lastdayIndex',lastDayIndex)
 
   const months = [
     "January",
@@ -648,7 +648,7 @@ const renderCalendar = () => {
 
   document.querySelector(".days").addEventListener("click", (e) => {
 
-  console.log(document.querySelector(".today").classList.remove("today"));
+  // console.log(document.querySelector(".today").classList.remove("today"));
   if (!e.target.classList.contains("dates")) {
     return;
  }
@@ -681,7 +681,7 @@ const renderCalendar = () => {
  localStorage.setItem("fromDateTime", new Date(selectedDate).toIsoString());
  localStorage.setItem("toDateTime", new Date(toDateTime).toIsoString());
  
- console.log(selectedDate,"selected date when date");
+//  console.log(selectedDate,"selected date when date");
 
  document.getElementById("para").innerHTML = selectedDate.toLocaleString(undefined, {
   day: "numeric",
@@ -691,7 +691,7 @@ const renderCalendar = () => {
 })
 
 document.querySelector(".prev").addEventListener("click", () => {
-  console.log(selectedDate)
+  // console.log(selectedDate)
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
 });
@@ -731,9 +731,11 @@ function handleSubmit(event) {
   var city = document.getElementById('city').value;
   var mobile = document.getElementById('mobile').value;
   var company = document.getElementById('company').value;
+  var datetime = document.getElementById('datetime').value;
+  var background = document.getElementById('background').value;
 
   // Validate form data
-  if (!name || !email || !city || !mobile || !company) {
+  if (!name || !email || !city || !mobile || !company || !datetime || !background) {
     alert('Please fill in all required fields.');
     return;
   }
@@ -754,11 +756,13 @@ function handleSubmit(event) {
     email: email,
     city: city,
     mobile: mobile,
-    company: company
+    company: company,
+    datetime: datetime,
+    background: background
   };
 
   // Make API call
-  fetch('https://5f1a8d65610bde0016fd2b35.mockapi.io/api/v1/users', {
+  fetch('https://w2xd4643u7tzkqwxt7asj44igy0hucyq.lambda-url.us-east-1.on.aws/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -774,12 +778,12 @@ function handleSubmit(event) {
     })
     .then(function(data) {
       // Handle the response data
-      console.log(data);
+      // console.log(data);
       alert('Someone from Kitsune will be in touch with you shortly.');
     })
     .catch(function(error) {
       // Handle any errors that occurred during the request
-      console.error('Error:', error);
+      // console.error('Error:', error);
       alert('An error occurred. Please try again.');
     });
 }
