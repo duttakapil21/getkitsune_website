@@ -735,6 +735,10 @@ function resetForm() {
 function handleSubmit(event) {
   event.preventDefault(); // Prevent form submission
 
+  // Disable the button
+  var submitButton = document.getElementById('submitBtn');
+  submitButton.disabled = true;
+
   // Retrieve form data
   var firstName = document.getElementById('firstName').value;
   var lastName = document.getElementById('lastName').value;
@@ -748,22 +752,25 @@ function handleSubmit(event) {
   // Validate form data
   if (!firstName || !lastName || !email || !city || !mobile || !company || !datetime || !background) {
     alert('Please fill in all required fields.');
+    submitButton.disabled = false; // Enable the button
     return;
   }
 
   if (!validateEmail(email)) {
     alert('Please enter a valid email address.');
+    submitButton.disabled = false; // Enable the button
     return;
   }
 
   if (!validateMobile(mobile)) {
     alert('Please enter a valid mobile number.');
+    submitButton.disabled = false; // Enable the button
     return;
   }
 
   // Create data object to send
   var data = {
-    firsyName: firstName,
+    firstName: firstName,
     lastName:lastName,
     email: email,
     city: city,
@@ -798,10 +805,12 @@ function handleSubmit(event) {
       // Handle any errors that occurred during the request
       // console.error('Error:', error);
       alert('An error occurred. Please try again.');
+    })
+    .finally(function() {
+      // Enable the button after the request is complete
+      submitButton.disabled = false;
     });
 }
 
 // Add form submission event listener
 document.getElementById('schedule-a-demo').addEventListener('submit', handleSubmit);
-
-
