@@ -721,6 +721,16 @@ function validateMobile(mobile) {
   return mobileRegex.test(mobile);
 }
 
+function resetForm() {
+  document.getElementById('firstName').value = '';
+  document.getElementById('lastName').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('city').value = '';
+  document.getElementById('mobile').value = '';
+  document.getElementById('company').value = '';
+  document.getElementById('datetime').value = '';
+  document.getElementById('background').value = '';
+}
 // Function to handle form submission
 function handleSubmit(event) {
   event.preventDefault(); // Prevent form submission
