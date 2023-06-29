@@ -725,8 +725,13 @@ function validateMobile(mobile) {
 function handleSubmit(event) {
   event.preventDefault(); // Prevent form submission
 
+  // Disable the button
+  var submitButton = document.getElementById('submitBtn');
+  submitButton.disabled = true;
+
   // Retrieve form data
-  var name = document.getElementById('name').value;
+  var firstName = document.getElementById('firstName').value;
+  var lastName = document.getElementById('lastName').value;
   var email = document.getElementById('email').value;
   var city = document.getElementById('city').value;
   var mobile = document.getElementById('mobile').value;
@@ -735,24 +740,28 @@ function handleSubmit(event) {
   var background = document.getElementById('background').value;
 
   // Validate form data
-  if (!name || !email || !city || !mobile || !company || !datetime || !background) {
+  if (!firstName || !lastName || !email || !city || !mobile || !company || !datetime || !background) {
     alert('Please fill in all required fields.');
+    submitButton.disabled = false; // Enable the button
     return;
   }
 
   if (!validateEmail(email)) {
     alert('Please enter a valid email address.');
+    submitButton.disabled = false; // Enable the button
     return;
   }
 
   if (!validateMobile(mobile)) {
     alert('Please enter a valid mobile number.');
+    submitButton.disabled = false; // Enable the button
     return;
   }
 
   // Create data object to send
   var data = {
-    name: name,
+    firstName: firstName,
+    lastName:lastName,
     email: email,
     city: city,
     mobile: mobile,
@@ -780,15 +789,18 @@ function handleSubmit(event) {
       // Handle the response data
       // console.log(data);
       alert('Someone from Kitsune will be in touch with you shortly.');
+      resetForm();
     })
     .catch(function(error) {
       // Handle any errors that occurred during the request
       // console.error('Error:', error);
       alert('An error occurred. Please try again.');
+    })
+    .finally(function() {
+      // Enable the button after the request is complete
+      submitButton.disabled = false;
     });
 }
 
 // Add form submission event listener
 document.getElementById('schedule-a-demo').addEventListener('submit', handleSubmit);
-
-
